@@ -1,4 +1,4 @@
-// write your code here
+// Nya Walton J00894068 11/19/2022
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -29,13 +29,14 @@ while (*ptr != SENTINEL)
     cin >> *ptr;
     }
     cin >> costOfOneBox;
-    cout << "Total number of boxes sold:" << totalNumofBoxesSold << endl;
-    cout << "Total money made: $" << totalNumofBoxesSold*costOfOneBox << endl;
+    cout << "Total number of boxes sold:" << totalNumOfBoxesSold << endl;
+    cout << "Total money made: $" << totalNumOfBoxesSold*costOfOneBox << endl;
     if (numOfVolunteers != 0)
-        cout << "Average number of boxes sold by each person:" << totalNumOfBoxesSold/numOfvolunteers << endl;
-    else 
+        cout << "Average number of boxes sold by each person:" << totalNumOfBoxesSold/numOfVolunteers << endl;
+    else
         cout << "No Input." << endl;
     
     return 0;
 }
+
     
