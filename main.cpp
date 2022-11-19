@@ -11,17 +11,22 @@ int numOfVolunteers;
 int numOfBoxesSold;
 int totalNumOfBoxesSold;
 double costOfOneBox;
+    
 cout << fixed << showpoint << setprecision(2);
-cout << "Enter each volunteer's name and the number of boxes sold by each volunteer ending with -1: " << endl;
+//cout << "Enter each volunteer's name and the number of boxes sold by each volunteer ending with -1: " << endl;
 totalNumOfBoxesSold = 0;
 numOfVolunteers = 0;
-cin >> name;
-while (name != SENTINEL)
+numOfBoxesSold = 0;
+string * ptr = nullptr;
+ptr = new string;
+cin >> *ptr;
+    
+while (*ptr != SENTINEL)
     {
     cin >> numOfBoxesSold;
     totalNumOfBoxesSold = totalNumOfBoxesSold+numOfBoxesSold;
     numOfVolunteers++;
-    cin >> name;
+    cin >> *ptr;
     }
      cout << endl;
     cout << "Total number of boxes sold: " << totalNumOfBoxesSold << endl;
